@@ -1,0 +1,95 @@
+
+.header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    border-bottom: 2px solid black;
+    position:fixed;
+    top: 0;
+    z-index: 3;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+}
+.buttons{
+    width: 35%;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.menu{
+    position: relative;
+
+}
+.menu-options{
+    background-color: #ffffff;
+    display: flex;
+    width: 0vw;
+    height: 0px;
+    position: absolute;
+    right: 0%;
+    padding: 5px;
+    opacity: 0;
+    top: 90%;
+    transition: all 0.2s ease-in-out;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    z-index: 0;
+}
+.menu-options ul{
+    list-style: none;
+
+}
+.menu-options a {
+    width: 20%;
+    height: 20%;
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: #ffffffd7;
+    background-color: #11111100;
+    transition: all 0.5s ease;
+z-index: 0;
+  }
+
+  .menu-options a:hover {
+    background-color: #11111100;
+    color: #ffffff;
+  
+  }
+  
+  .menu:hover .menu-options {
+    opacity: 1;
+    top: 100%;
+    background-color: #111111;
+    z-index: 1;
+    height: 30vh;
+    width: 100vw;
+  }
+.menu-button{
+    height:100%;
+    display: flex;
+    align-items: center;
+}
+.options{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.options1{
+    width: 30%;
+    display: flex;
+}
+.options1 ul li{
+    display: flex;
+    flex-direction: row;
+}

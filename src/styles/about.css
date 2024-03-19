@@ -1,0 +1,13 @@
+
+.aboutTitle{
+    font-size: 100px;
+    font-weight: 300;
+    text-align: center;
+    width: 100%;
+    color: black; /* Color inicial */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */}
+
+.aboutTitle span {
+    transition: color 0.5s; /* Transición suave para el cambio de color */
+    color: black;
+  }

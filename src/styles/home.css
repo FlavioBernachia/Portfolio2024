@@ -1,19 +1,56 @@
 .home{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
-.tittle-home{
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    top: 40%;
-    left: 80%;
-    font-size: 30px;
+.homeTittle{
+    width: 100%;
+    height: 200px;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 144px;
     font-weight: 200;
+    animation: fadeInUp 1.5s ease forwards;
+}
+.homeParraf{
+    position: absolute;
+    rotate: -90deg;
+    /* top: 0%; */
+    width: 124px;
+    height: 20px;
+    left: 0px;
+    bottom: 60%;
+}
+.homeParraf-2{
+    position: absolute;
+    rotate: 90deg;
+    top: -10%;
+    right: -2.5%;
+    width: 154px;
+    height: 20px;
+
+}
+.aboutTittle{
+    font-size: 144px ;
+    margin-top: 20%;
+    width: 100%;
+    height: 200px;
+    text-align: center;
+font-weight: 300;
 }
 
+@keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(70px); /* Empieza 20px hacia abajo */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0); /* Llega a su posición original */
+    }
+  }
+  
 /* Mobile */
 @media (max-width: 700px) {
 }

@@ -5,6 +5,7 @@ import logo from '../../public/logo.svg'
 export const Header = () => {
   return (
     <div className='header'>
+      
         <div className='logo'>
         <Image src={logo} alt='logotipo' width={80} height={80}/>
         </div>

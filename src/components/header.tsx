@@ -13,7 +13,7 @@ export const Header = () => {
             <div className='menu-button'>Home</div>
             <div className='menu-button'>About</div>
             <div className='menu-button'>Projects</div>
-            <div className='menu'><div className='menu-button'>Menu</div>
+            <div className='menu'>Menu</div>
             <div className='menu-options'>
                 <ul className='options'>
                     <li><a  href="#">Home</a></li>
@@ -27,7 +27,6 @@ export const Header = () => {
                     <li><a href="#">instagram</a></li>
                     <li><a href="#">instagram</a></li>
                 </ul>
-            </div>
             </div>
         </div>
 

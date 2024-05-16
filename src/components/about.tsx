@@ -57,14 +57,12 @@ export const About: React.FC = () => {
 
       <div className='aboutContent'>
         <div className='aboutMe'>
+        <p>Welcome to my portfolio!</p>
     <p>
-      Welcome to my portfolio!
+      I&apos;m a passionate full-stack developer with a strong focus on web development. Recently, I completed the Certified Tech Developer program, a prestigious collaboration between Digital House, Mercado Libre, and Globant. Through this program, I&apos;ve earned certifications such as &quot;Professional Developer&quot; and &quot;Frontend Specialist,&quot; showcasing my dedication to excellence.
     </p>
     <p>
-    I'm a passionate full-stack developer with a strong focus on web development. Recently, I completed the Certified Tech Developer program, a prestigious collaboration between Digital House, Mercado Libre, and Globant. Through this program, I've earned certifications such as "Professional Developer" and "Frontend Specialist," showcasing my dedication to excellence.
-    </p>
-    <p>
-    My expertise lies in creating innovative solutions and collaborating effectively within multidisciplinary teams. With a commitment to staying updated with the latest technologies, I'm excited about the opportunity to leverage my skills to contribute to the success of your company.
+      My expertise lies in creating innovative solutions and collaborating effectively within multidisciplinary teams. With a commitment to staying updated with the latest technologies, I&apos;m excited about the opportunity to leverage my skills to contribute to the success of your company.
     </p>
     <div className='title-certification'><h2>Certifications</h2></div>
     <div className='certifications'>

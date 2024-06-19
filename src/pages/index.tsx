@@ -5,7 +5,7 @@ import styles from "@/styles/Home.module.css";
 import { Header } from "@/components/header";
 import  { HomePage }  from '@/components/home'
 import { About } from "@/components/about";
-import Projects from "@/components/projects";
+import { Projects } from "@/components/projects";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +15,7 @@ export default function Home() {
     <Header/>
     <HomePage />
     <About/>
-    <Projects/>
+    <Projects title={""} description={""} imageUrl={undefined} projectUrl={""}/>
     </>
   );
 }

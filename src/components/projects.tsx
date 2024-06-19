@@ -51,7 +51,7 @@ const projects: Project[] = [
   // Agrega más proyectos según sea necesario
 ];
 
-const Projects: FC<Project> = () => {
+export const Projects: FC<Project> = () => {
 
   return (
     <div className='project-general'>
@@ -64,5 +64,3 @@ const Projects: FC<Project> = () => {
     </div>
   )
 }
-
-export default Projects

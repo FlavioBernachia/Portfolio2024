@@ -24,13 +24,26 @@
     justify-content: space-evenly;
     font-size: 20px;
     font-weight: 600;
-    cursor: pointer;
+    cursor: pointer;  
 }
 .menu-button{
     padding: 27px;
+    transition: all 0.8s ease;
+}
+.menu-button:hover{
+    background-color:rgb(173, 106, 235);
+}
+.menu-button:nth-child(2):hover{
+    background-color:rgb(248, 119, 119);
+}.menu-button:nth-child(3):hover{
+    background-color:rgb(113, 188, 250);
 }
 .menu{
     padding: 27px;
+    transition: all 0.8s ease;
+}
+.menu:hover{
+    background-color: rgb(253, 229, 94);
 }
 
 .menu-options {
@@ -61,9 +74,15 @@
 
     .options{
         display: block;
+        padding-top: 30px;
+
+        li{
+            padding-top: 15px;
+        }
     }
     .options1{
         display: flex;
+        margin: 12%;
     }
 }
 
@@ -73,6 +92,7 @@
        text-decoration: none;
        color: white;
    }
+   
 }
     
 .options1{

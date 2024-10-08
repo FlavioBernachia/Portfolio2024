@@ -22,7 +22,7 @@ export const About: React.FC = () => {
   const letters: string[] = text.split("");
   const [randomColors, setRandomColors] = useState<RGB[]>([]);
 
-  const handleHover = (): void => {
+   const handleHover = (): void => {
     const colors: RGB[] = letters.map(() => ({
       r: Math.floor(Math.random() * 256),
       g: Math.floor(Math.random() * 256),

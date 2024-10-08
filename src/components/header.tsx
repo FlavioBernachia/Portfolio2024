@@ -11,13 +11,13 @@ export const Header = () => {
         </div>
         <div className='buttons'>
             <div className='menu-button'>Home</div>
-            <div className='menu-button'>About</div>
+            <div className='menu-button' >About</div>
             <div className='menu-button'>Projects</div>
             <div className='menu'>Menu</div>
             <div className='menu-options'>
                 <ul className='options'>
                     <li><a  href="#">Home</a></li>
-                    <li><a  href="#">About</a></li>
+                    <li><a  href="#AboutTittle">About</a></li>
                     <li><a  href="#">Projects</a></li>
                     <li><a  href="#">Contact</a></li>
                 </ul>

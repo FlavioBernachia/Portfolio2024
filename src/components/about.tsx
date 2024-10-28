@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import React, { useState } from 'react';
+import Modal from 'react-modal';
 import foto1 from "../../public/sombrero.jpg"
 import foto2 from "../../public/calvo.jpg"
 import foto3 from "../../public/perfil.jpg"
@@ -40,6 +41,22 @@ export const About: React.FC = () => {
     setRandomColors(colors);
   };
 
+  // Función para abrir el modal
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+  const openModal = (imageSrc: string): void => {
+    setSelectedImage(imageSrc);
+    setIsModalOpen(true);
+  };
+
+  // Función para cerrar el modal
+  const closeModal = (): void => {
+    setIsModalOpen(false);
+    setSelectedImage(null);
+  };
+
+
   return (
     <div>
       <h2 className='aboutTitle'>
@@ -66,8 +83,24 @@ export const About: React.FC = () => {
     </p>
     <div className='title-certification'><h2>Certifications</h2></div>
     <div className='certifications'>
- <Image src={certified1} width={1000} height={250} alt='certification' className='c1'></Image>
- <Image src={certified2} width={1000} height={250} alt='certification' className='c2'></Image>
+<div className='certifications'>
+            <Image
+              src={certified1}
+              width={500}
+              height={500}
+              alt='certification'
+              className='c1'
+              onClick={() => openModal("/profesional developer (2).jpg")} // Abre el modal con `certified1`
+            />
+            <Image
+              src={certified2}
+              width={500}
+              height={500}
+              alt='certification'
+              className='c2'
+              onClick={() => openModal("/specialist frontend.jpg")} // Abre el modal con `certified2`
+            />
+          </div>
     </div>
 
   </div>
@@ -81,6 +114,37 @@ export const About: React.FC = () => {
           <div className='smallImage' id='gallery-image-ult'></div>
         </div>
       </div>
+
+      <Modal
+        isOpen={isModalOpen}
+        onRequestClose={closeModal}
+        overlayClassName="modal"
+        style={{
+          overlay: { backgroundColor: "rgba(0, 0, 0, 0.8)" },
+          content: {
+            top: "50%",
+            left: "50%",
+            right: "auto",
+            bottom: "auto",
+            transform: "translate(-50%, -50%)",
+            maxWidth: "50%",
+            maxHeight: "70%",
+            padding: "0",
+          },
+        }}
+        className="modal-content"
+      >
+        {selectedImage && (
+          <Image
+            src={selectedImage}
+            alt="Expanded certification"
+            width={500}
+            height={400}
+            onClick={closeModal}
+          />
+        )}
+      </Modal>
+
     </div>
   );
 };

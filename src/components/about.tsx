@@ -58,8 +58,9 @@ export const About: React.FC = () => {
 
 
   return (
+    <div className='aboutGeneral'> <div className='aboutDirection' id='AboutTittle'></div> <h2 className='aboutTittle' data-aos="fade-up">About me.</h2>
     <div>
-      <h2 className='aboutTitle'>
+      <h2 className='aboutTitle' data-aos="fade-up">
         {letters.map((letter: string, index: number) => (
           <span
             key={index}
@@ -72,7 +73,7 @@ export const About: React.FC = () => {
         ))}
       </h2>
 
-      <div className='aboutContent'>
+      <div className='aboutContent' data-aos="fade-up">
         <div className='aboutMe'>
         <p>Welcome to my portfolio!</p>
     <p>
@@ -83,7 +84,7 @@ export const About: React.FC = () => {
     </p>
     <div className='title-certification'><h2>Certifications</h2></div>
     <div className='certifications'>
-<div className='certifications'>
+<div className='certifications' data-aos="fade-up">
             <Image
               src={certified1}
               width={500}
@@ -104,14 +105,14 @@ export const About: React.FC = () => {
     </div>
 
   </div>
-        <div className='gallery'>
-          <div className='smallImage'><Image className='gallery-image' width={230} height={230} src={foto3} alt="" ></Image></div>
-        <div className='largeImage'><Image className='gallery-image'  width={230} height={320}src={foto4} alt="" ></Image></div>
-          <div className='largeImage'><Image className='gallery-image' width={230} height={320} src={foto2} alt="" ></Image></div>
-          <div className='smallImage'><Image className='gallery-image' width={230} height={230} src={foto5} alt="" ></Image></div>
-          <div className='smallImage'><Image className='gallery-image' width={230} height={230} src={foto6} alt="" ></Image></div>
+        <div className='gallery' data-aos="fade-up">
+          <div className='smallImage' ><Image className='gallery-image' width={230} height={230} src={foto3} alt="" ></Image></div>
+        <div className='largeImage' ><Image className='gallery-image'  width={230} height={320}src={foto4} alt="" ></Image></div>
+          <div className='largeImage' ><Image className='gallery-image' width={230} height={320} src={foto2} alt="" ></Image></div>
+          <div className='smallImage' ><Image className='gallery-image' width={230} height={230} src={foto5} alt="" ></Image></div>
+          <div className='smallImage' ><Image className='gallery-image' width={230} height={230} src={foto6} alt="" ></Image></div>
           <div className='largeImage'><Image className='gallery-image' width={230} height={320} src={foto1} alt="" ></Image></div>
-          <div className='smallImage' id='gallery-image-ult'></div>
+          <div className='smallImage' id='gallery-image-ult' ></div>
         </div>
       </div>
 
@@ -145,6 +146,7 @@ export const About: React.FC = () => {
         )}
       </Modal>
 
+    </div>
     </div>
   );
 };

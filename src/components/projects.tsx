@@ -54,9 +54,10 @@ const projects: Project[] = [
 export const Projects: FC<Project> = () => {
 
   return (
-    <div className='project-general'>
+// Suggested code may be subject to a license. Learn more: ~LicenseLog:1712048333.
+    <div className='project-general' id='projects'>
       <h1 className='project-title'>Proyectos</h1>
-      <div className='projects-grid'>
+      <div className='projects-grid' data-aos="fade-up">
         {projects.map((project, index) => (
           <ProjectCard key={index} {...project} />
         ))}

@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
-    border-bottom: 1npmpx solid black;
+    border-bottom: 1px solid black;
     position: fixed;
     top: 0;
     z-index: 3;
@@ -29,6 +29,9 @@
 .menu-button{
     padding: 27px;
     transition: all 0.8s ease;
+    list-style-type: none;
+    text-decoration: none;
+    color: black;
 }
 .menu-button:hover{
     background-color:rgb(173, 106, 235);
@@ -82,7 +85,21 @@
     }
     .options1{
         display: flex;
-        margin: 12%;
+        margin: 6%;
+
+        li{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        li p{
+            transition: all 0.3s ease;
+        }
+        li p:hover{
+            color: rgb(253, 85, 85);
+        }
     }
 }
 
@@ -91,6 +108,11 @@
     a{
        text-decoration: none;
        color: white;
+       transition: all 0.3s ease;
+   }
+
+   a:hover{
+    color: rgb(253, 85, 85);
    }
    
 }
